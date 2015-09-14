@@ -1,9 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Uebergabe der Methode calculate and someMethod mittels "anonymer Klasse"
  */
-package lambdaAusdruecke;
+package lambdaAusdruecke01;
 
 /**
  *
@@ -16,7 +14,7 @@ public class A {
         this.i = i;
     }
     
-    public void someMethod(X x) {
+    public void someMethod(Xlegacy x) {
         int result = i + x.calculate(2, 3);
         System.out.println(result);
     }
@@ -24,7 +22,7 @@ public class A {
     public static void main(String[] args) {
         A a = new A(1);
         
-        a.someMethod(new X() {
+        a.someMethod(new Xlegacy() {
         public int calculate(int a, int b) {
             return a + b;
         }

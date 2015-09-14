@@ -6,13 +6,13 @@
         System.out.println("Hallo");
 }
  */
-package lambdaAusdruecke;
+package lambdaAusdruecke01;
 
 /**
  *
  * @author RSCHENK
  */
 @FunctionalInterface
-public interface X {
+public interface Xlegacy {
     int calculate(int a, int b);
 }
